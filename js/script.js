@@ -39,3 +39,4 @@ closeMenu.addEventListener('click',()=> {
     mainMenu.classList.remove('show');
 })
 
+  AOS.init();
