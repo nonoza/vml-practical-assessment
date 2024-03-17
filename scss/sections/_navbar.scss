@@ -1,0 +1,179 @@
+/* Stylesheet for the navbar section */
+@import "../mixin";
+@import "../typography";
+
+.header-section {
+  @include media-breakpoint-up(lg) {
+    margin: 22px 40px 0;
+  }
+
+  .logo {
+    @include media-breakpoint-up(lg) {
+      margin-right: 63px;
+    }
+  }
+
+  .mobile-icon {
+    border: none;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 32px;
+    left: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background: hsla(0, 0%, 8%, 0.59);
+    opacity: 1;
+    transition: opacity 0.3s ease 0.2s;
+    display: none;
+
+    &.show {
+      display: block;
+    }
+
+    @include media-breakpoint-up(lg) {
+      position: unset;
+      bottom: 0;
+      height: 0;
+      width: 0;
+      background: none;
+      display: contents;
+    }
+
+    .main-menu {
+      position: relative;
+      left: 133.5px;
+      z-index: 2;
+      background: white;
+      width: 100vw;
+      min-height: 100vh;
+      padding: 23px 20px 0 20px;
+
+      @include media-breakpoint-up(lg) {
+        left: 0;
+        z-index: 0;
+        width: 0;
+        height: 0;
+        min-height: 0;
+        background: 0;
+        padding: 0;
+      }
+    }
+
+    .close-icon-btn {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 134px;
+      margin-bottom: 37px;
+
+      @include media-breakpoint-up(lg) {
+        display: none;
+      }
+    }
+
+    .navbar-nav {
+     .nav-item {
+
+      .dropdown-menu {
+        border: none;
+
+        @include media-breakpoint-up(lg) {
+          background-color: $almost-white;
+          padding: 1rem 0;
+          border-radius: 0.5rem;
+          box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2)!important;
+          border: none!important;
+        }
+
+        > li {
+          .menu-icon {
+            height: 100%;
+          }
+        }
+      }
+
+      .nav-link {
+        font-family: $brand-font-reguler;
+        font-weight: bold;
+        color: $medium-gray;
+        font-size: $nav-font-size;
+
+        &:hover {
+          color: $almost-black;
+          background: transparent;
+        }
+
+        &:active {
+          color: $almost-black;
+          background: transparent;
+        }
+
+        @include media-breakpoint-up(lg) {
+          margin-right: 20px;
+        }
+
+        
+      }
+
+     }
+     
+    }
+
+    .right-section {
+      position: relative;
+      flex-direction: column;
+      left: 0;
+      width: 60%;
+
+      @include media-breakpoint-up(md) {
+        width: 80%;
+      }
+
+      @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        width: 14%;
+      }
+
+      .login {
+        // Typography
+        font-family: $brand-font-reguler;
+        font-weight: bold;
+        font-size: $nav-font-size;
+
+        color: $link-color;
+
+        cursor: pointer;
+
+        &:hover {
+          color: $almost-black;
+        }
+
+        &:active {
+          color: $almost-black;
+        }
+      }
+
+      .btn-outline {
+        @include btn-outline;
+        width: 100%;
+        font-size: $nav-font-size;
+
+        @include media-breakpoint-up(lg) {
+          width: 100%;
+        }
+
+        &:hover {
+          @include btn-background;
+        }
+
+        &:active {
+          @include btn-background;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "./custom";
+
+// buttons
+
+//Styles for outline button
+@mixin btn-outline {
+  border: 2px solid $medium-gray;
+  background: transparent;
+  color: $medium-gray;
+  font-family: $brand-font-reguler;
+  border-radius: 10px;
+  padding: 0.9rem 1.9rem;
+  font-weight: bold;
+}
+
+//Styles for background
+@mixin btn-background {
+  border: 2px solid $almost-black;
+  background: $almost-black;
+  color: $almost-white;
+  font-family: $brand-font-reguler;
+  padding: 0.9rem 1.9rem;
+  border-radius: 18px;
+  font-weight: bold;
+}

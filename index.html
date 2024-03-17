@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assessment | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="body-container">
+    <!--Navigation Section starts -->
+    <header class="header-section">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand logo" href="#"
+            ><img src="./images/logo.svg" alt="logo"
+          /></a>
+
+          <button
+            class="navbar-toggler mobile-icon"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="./images/icon-menu.svg" alt="icon-menu" />
+          </button>
+
+          <div class="overlay">
+            <div
+              class="collapse navbar-collapse main-menu"
+              id="navbarSupportedContent"
+            >
+              <div class="close-icon-btn">
+                <img
+                  src="./images/icon-close-menu.svg"
+                  class="icon-close-menu"
+                />
+              </div>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown mr-3">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Features
+                    <img
+                      src="./images/icon-arrow-down.svg"
+                      alt="icon-arrow-down"
+                      class="dropdown-icon"
+                    />
+                  </a>
+                  <ul class="dropdown-menu p-3">
+                    <li class="d-flex gap-3 align-items-center">
+                      <img
+                        src="./images/icon-todo.svg"
+                        alt="icon-todo"
+                        class="menu-icon"
+                      /><a class="dropdown-item nav-link" href="#">ToDo List</a>
+                    </li>
+                    <li class="d-flex gap-3 align-items-center">
+                      <img
+                        src="./images/icon-calendar.svg"
+                        alt="icon-calender"
+                        class="menu-icon"
+                      /><a class="dropdown-item nav-link" href="#">Calender</a>
+                    </li>
+                    <li class="d-flex gap-3 align-items-center">
+                      <img
+                        src="./images/icon-reminders.svg"
+                        alt="icon-reminders"
+                        class="menu-icon"
+                      /><a class="dropdown-item nav-link" href="#">Reminders</a>
+                    </li>
+                    <li class="d-flex gap-3 align-items-center">
+                      <img
+                        src="./images/icon-planning.svg"
+                        alt="icon-planning"
+                        class="menu-icon"
+                      /><a class="dropdown-item nav-link" href="#">Planning</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown mr-3">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Company
+                    <img
+                      src="./images/icon-arrow-down.svg"
+                      alt="icon-arrow-down"
+                      class="dropdown-icon"
+                    />
+                  </a>
+                  <ul class="dropdown-menu p-3">
+                    <li>
+                      <a class="dropdown-item nav-link" href="#">History</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item nav-link" href="#">Our Team</a>
+                    </li>
+                    <li><a class="dropdown-item nav-link" href="#">Blog</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item mr-3">
+                  <a class="nav-link" href="#">Carrers</a>
+                </li>
+                <li class="nav-item mr-3">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+              </ul>
+              <div
+                class="d-flex align-items-center justify-content-center gap-3 right-section"
+              >
+                <a class="nav-link login">Login</a>
+                <button class="btn btn-outline" type="submit">Register</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Navigation Section ends -->
+
+    <!--Main Section starts -->
+    <main>
+      <section class="hero-section">
+        <section class="hero-content">
+          <h1 class="heading">Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button>Learn more</button>
+          <section class="logo-section">
+            <img src="./images/client-databiz.svg" alt="client-databiz" />
+            <img src="./images/client-audiophile.svg" alt="client-audiophile" />
+            <img src="./images/client-meet.svg" alt="client-meet" />
+            <img src="./images/client-maker.svg" alt="client-maker" />
+          </section>
+        </section>
+
+        <div class="hero-image">
+          <picture>
+            <source
+              media="(min-width:1100px)"
+              srcset="./images/image-hero-desktop.png"
+            />
+            <img
+              src="./images/image-hero-mobile.png"
+              alt="mobile-image"
+              class="mobile-img"
+            />
+          </picture>
+        </div>
+      </section>
+    </main> 
+
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

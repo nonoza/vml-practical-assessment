@@ -1,0 +1,51 @@
+//importing bootstrap class that will be overidden.
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./typography.scss";
+
+//Theme colors
+$almost-white :hsl(0, 0%, 98%);
+$medium-gray: hsl(0, 0%, 41%);
+$almost-black:hsl(0, 0%, 8%);
+
+// Theme fonts
+$brand-font-reguler : 'epilogue-bold', Arial, sans-serif;;
+$brand-font-bold: 'epilogue-semi-bold', Arial, sans-serif;
+
+//fontSizes
+$body-font-size: 18px;
+$nav-font-size: 14px;
+
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1100px, // customised to accomordate for ipad pro for this project
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+
+// links
+$link-color:                              $medium-gray;
+$link-decoration:                         underline !default;
+$link-shade-percentage:                   20% !default;
+$link-hover-color:                        $almost-black;
+$link-hover-decoration:                   null !default;
+
+//Navs
+$nav-link-padding-y:                .5rem !default;
+$nav-link-padding-x:                1rem !default;
+$nav-link-font-size:                null !default;
+$nav-link-font-weight:              null !default;
+$nav-link-color:                    $medium-gray; //Set the theme color
+$nav-link-hover-color:              $almost-black; //Set the theme color
+$nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
+$nav-link-disabled-color:           var(--#{$prefix}secondary-color) !default;
+$nav-link-focus-box-shadow:         $focus-ring-box-shadow !default;
+
+
+//Nav icon 
+$navbar-dark-toggler-icon-bg: url("../images/icon-arrow-down.svg");

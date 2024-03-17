@@ -1,0 +1,19 @@
+@import "custom";
+
+//importing sections
+@import "../scss/sections/navbar";
+@import "../scss/sections/main.scss";
+
+//impoting typographu
+@import "typography";
+
+body {
+  font-size: $body-font-size;
+  @include media-breakpoint-up(md) {
+    padding: 0;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
