@@ -7,7 +7,7 @@ This project is one of the front end mentor project which includes dropdown nav 
 
 ### Screenshot
 
-![Mobile view of solution](./images/mobile-design.jpg)
+
 
 ![Mobile view of solution](./images/moble-mockup.png)
 
