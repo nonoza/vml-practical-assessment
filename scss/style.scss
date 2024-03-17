@@ -1,3 +1,4 @@
+//importing the style guides
 @import "custom";
 
 //importing sections
@@ -8,11 +9,13 @@
 @import "typography";
 
 body {
+  background: $almost-white;
   font-size: $body-font-size;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(md) { // table media quries
     padding: 0;
   }
-  @include media-breakpoint-up(lg) {
+
+  @include media-breakpoint-up(lg) { // Larger screens
     max-width: 1400px;
     margin: 0 auto;
   }

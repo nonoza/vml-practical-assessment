@@ -1,5 +1,4 @@
-//importing bootstrap class that will be overidden.
-
+/* File that acts as a studyguide will theme colors, fonts and sizes and including bootstrap customes */
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./typography.scss";
 
@@ -47,5 +46,5 @@ $nav-link-disabled-color:           var(--#{$prefix}secondary-color) !default;
 $nav-link-focus-box-shadow:         $focus-ring-box-shadow !default;
 
 
-//Nav icon 
+//Nav icon image
 $navbar-dark-toggler-icon-bg: url("../images/icon-arrow-down.svg");

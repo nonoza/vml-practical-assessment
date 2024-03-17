@@ -21,19 +21,30 @@
     position: fixed;
     top: 0;
     right: 0;
-    bottom: 32px;
-    left: 0;
+    bottom: 0;
+    left: 100%; 
     z-index: 1;
     height: 100vh;
     width: 100vw;
     background: hsla(0, 0%, 8%, 0.59);
-    opacity: 1;
-    transition: opacity 0.3s ease 0.2s;
+    opacity: 0; 
     display: none;
-
+    transition: left 0.5s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.5s ease;
+  
     &.show {
       display: block;
+      left: 0;
+      opacity: 1; 
+      animation: fadeIn 0.3s forwards;
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
     }
+
+    
 
     @include media-breakpoint-up(lg) {
       position: unset;
@@ -52,6 +63,7 @@
       width: 100vw;
       min-height: 100vh;
       padding: 23px 20px 0 20px;
+      box-shadow: -1rem 0rem 3rem $almost-black;
 
       @include media-breakpoint-up(lg) {
         left: 0;
@@ -88,6 +100,15 @@
           box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2)!important;
           border: none!important;
         }
+        
+        &[data-bs-popper] {
+          animation: fadeIn 0.3s forwards;
+          
+          @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+          }
+        }
 
         > li {
           .menu-icon {
@@ -105,6 +126,7 @@
         &:hover {
           color: $almost-black;
           background: transparent;
+          transition: all 350ms ease-in-out;
         }
 
         &:active {
@@ -150,6 +172,7 @@
 
         &:hover {
           color: $almost-black;
+          transition: all 350ms ease-in-out;
         }
 
         &:active {
@@ -168,6 +191,7 @@
 
         &:hover {
           @include btn-background;
+          transition: all 350ms ease-in-out;
         }
 
         &:active {

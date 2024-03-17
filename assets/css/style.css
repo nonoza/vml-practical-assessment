@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* File that acts as a studyguide will theme colors, fonts and sizes and including bootstrap customes */
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -11857,6 +11858,7 @@ textarea.form-control-lg {
   font-style: bold;
 }
 /* Stylesheet for the navbar section */
+/* File that acts as a studyguide will theme colors, fonts and sizes and including bootstrap customes */
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -23743,18 +23745,29 @@ textarea.form-control-lg {
   position: fixed;
   top: 0;
   right: 0;
-  bottom: 32px;
-  left: 0;
+  bottom: 0;
+  left: 100%;
   z-index: 1;
   height: 100vh;
   width: 100vw;
   background: hsla(0, 0%, 8%, 0.59);
-  opacity: 1;
-  transition: opacity 0.3s ease 0.2s;
+  opacity: 0;
   display: none;
+  transition: left 0.5s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.5s ease;
 }
 .header-section .overlay.show {
   display: block;
+  left: 0;
+  opacity: 1;
+  animation: fadeIn 0.3s forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media (min-width: 992px) {
   .header-section .overlay {
@@ -23774,6 +23787,7 @@ textarea.form-control-lg {
   width: 100vw;
   min-height: 100vh;
   padding: 23px 20px 0 20px;
+  box-shadow: -1rem 0rem 3rem hsl(0, 0%, 8%);
 }
 @media (min-width: 992px) {
   .header-section .overlay .main-menu {
@@ -23809,6 +23823,17 @@ textarea.form-control-lg {
     border: none !important;
   }
 }
+.header-section .overlay .navbar-nav .nav-item .dropdown-menu[data-bs-popper] {
+  animation: fadeIn 0.3s forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .header-section .overlay .navbar-nav .nav-item .dropdown-menu > li .menu-icon {
   height: 100%;
 }
@@ -23821,6 +23846,7 @@ textarea.form-control-lg {
 .header-section .overlay .navbar-nav .nav-item .nav-link:hover {
   color: hsl(0, 0%, 8%);
   background: transparent;
+  transition: all 350ms ease-in-out;
 }
 .header-section .overlay .navbar-nav .nav-item .nav-link:active {
   color: hsl(0, 0%, 8%);
@@ -23857,6 +23883,7 @@ textarea.form-control-lg {
 }
 .header-section .overlay .right-section .login:hover {
   color: hsl(0, 0%, 8%);
+  transition: all 350ms ease-in-out;
 }
 .header-section .overlay .right-section .login:active {
   color: hsl(0, 0%, 8%);
@@ -23866,7 +23893,7 @@ textarea.form-control-lg {
   background: transparent;
   color: hsl(0, 0%, 41%);
   font-family: "epilogue-bold", Arial, sans-serif;
-  border-radius: 10px;
+  border-radius: 18px;
   padding: 0.9rem 1.9rem;
   font-weight: bold;
   width: 100%;
@@ -23885,6 +23912,7 @@ textarea.form-control-lg {
   padding: 0.9rem 1.9rem;
   border-radius: 18px;
   font-weight: bold;
+  transition: all 350ms ease-in-out;
 }
 .header-section .overlay .right-section .btn-outline:active {
   border: 2px solid hsl(0, 0%, 8%);
@@ -23897,6 +23925,7 @@ textarea.form-control-lg {
 }
 
 /* styles for the main section*/
+/* File that acts as a studyguide will theme colors, fonts and sizes and including bootstrap customes */
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -35830,16 +35859,17 @@ textarea.form-control-lg {
   background: transparent;
   color: hsl(0, 0%, 41%);
   font-family: "epilogue-bold", Arial, sans-serif;
-  border-radius: 10px;
+  border-radius: 18px;
   padding: 0.9rem 1.9rem;
   font-weight: bold;
+  transition: all 350ms ease-in-out;
 }
 .hero-section .hero-content button:active {
   border: 2px solid hsl(0, 0%, 41%);
   background: transparent;
   color: hsl(0, 0%, 41%);
   font-family: "epilogue-bold", Arial, sans-serif;
-  border-radius: 10px;
+  border-radius: 18px;
   padding: 0.9rem 1.9rem;
   font-weight: bold;
 }
@@ -35848,7 +35878,13 @@ textarea.form-control-lg {
   justify-content: center;
   align-items: center;
   gap: 27px;
-  margin-bottom: 99px;
+  margin: 0 12px 99px 12px;
+}
+@media (min-width: 992px) {
+  .hero-section .hero-content .logo-section {
+    margin: 0 0 99px 0;
+    justify-content: space-between;
+  }
 }
 .hero-section .hero-content .logo-section img {
   width: 19%;
@@ -35877,6 +35913,7 @@ textarea.form-control-lg {
   font-style: bold;
 }
 body {
+  background: hsl(0, 0%, 98%);
   font-size: 18px;
 }
 @media (min-width: 768px) {

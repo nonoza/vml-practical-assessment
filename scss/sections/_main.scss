@@ -1,63 +1,50 @@
 /* styles for the main section*/
+// Importing the mixin and typography
 @import "../mixin";
 @import "../typography";
+// Hero section styles stars
 .hero-section {
   display: flex;
   flex-direction: column-reverse;
-
   margin-top: 35px;
-
   padding: 0 !important;
 
-  @include media-breakpoint-up(lg) {
-    // Flex direction
+  @include media-breakpoint-up(lg) { // Larger screens
     flex-direction: row;
-
     gap: 200px;
-
     max-width: 1164px;
-
     margin: 79px auto 121px;
   }
 
   .hero-content {
     margin-top: 46px;
-
     text-align: center;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(lg) { // Larger screens
       text-align: left;
     }
 
     .heading {
       font-size: 2rem;
-
       font-family: $brand-font-bold;
       font-weight: 700;
 
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(lg) { // Larger screens
         font-size: 4.6rem;
-
         line-height: 5rem;
-
         text-align: left;
-
         max-width: 93%;
       }
     }
 
     p {
       padding: 0 20px;
-
       line-height: 2rem;
-
       margin-bottom: 33px;
-
       font-family: $brand-font-reguler;
-
       color: $medium-gray;
 
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(lg) { // Larger screens
         padding: 0;
         margin-right: 21px;
       }
@@ -69,6 +56,7 @@
 
       &:hover {
         @include btn-outline;
+        transition: all 350ms ease-in-out;
       }
 
       &:active {
@@ -78,13 +66,15 @@
 
     .logo-section {
       display: flex;
-
       justify-content: center;
       align-items: center;
-
       gap: 27px;
+      margin: 0 12px 99px 12px;
 
-      margin-bottom: 99px;
+      @include media-breakpoint-up(lg) {
+        margin: 0 0 99px 0;
+        justify-content: space-between;
+      }
 
       img {
         width: 19%;
@@ -98,7 +88,6 @@
 
         @include media-breakpoint-up(md) {
           display: flex;
-
           margin: auto;
           width: 100%;
         }
