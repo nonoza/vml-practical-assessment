@@ -8,13 +8,12 @@ $medium-gray: hsl(0, 0%, 41%);
 $almost-black:hsl(0, 0%, 8%);
 
 // Theme fonts
-$brand-font-reguler : 'epilogue-bold', Arial, sans-serif;;
-$brand-font-bold: 'epilogue-semi-bold', Arial, sans-serif;
+$brand-font:  "Epilogue", sans-serif;
+$copy-font: 'epilogue-regular', sans-serif;
 
 //fontSizes
 $body-font-size: 18px;
-$nav-font-size: 14px;
-
+$nav-font-size: 16px;
 
 // scss-docs-start grid-breakpoints
 $grid-breakpoints: (
@@ -25,7 +24,6 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1400px
 ) !default;
-
 
 // links
 $link-color:                              $medium-gray;

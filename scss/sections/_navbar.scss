@@ -44,8 +44,6 @@
 
     }
 
-    
-
     @include media-breakpoint-up(lg) {
       position: unset;
       bottom: 0;
@@ -89,6 +87,11 @@
 
     .navbar-nav {
      .nav-item {
+      .nav-link {
+        img {
+          margin-left: 11px;
+        }
+      }
 
       .dropdown-menu {
         border: none;
@@ -118,8 +121,7 @@
       }
 
       .nav-link {
-        font-family: $brand-font-reguler;
-        font-weight: bold;
+        font-weight: 500;
         color: $medium-gray;
         font-size: $nav-font-size;
 
@@ -137,8 +139,7 @@
         @include media-breakpoint-up(lg) {
           margin-right: 20px;
         }
-
-        
+  
       }
 
      }
@@ -162,12 +163,9 @@
 
       .login {
         // Typography
-        font-family: $brand-font-reguler;
-        font-weight: bold;
+        font-weight: 500;
         font-size: $nav-font-size;
-
         color: $link-color;
-
         cursor: pointer;
 
         &:hover {

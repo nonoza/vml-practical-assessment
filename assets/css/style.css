@@ -11846,16 +11846,17 @@ textarea.form-control-lg {
   }
 }
 @font-face {
-  font-family: "epilogue-bold", Arial, sans-serif;
+  font-family: "epilogue-regular", sans-serif;
   src: url("./fonts/Epilogue/static/Epilogue-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: bold;
 }
 @font-face {
-  font-family: "epilogue-semi-bold", Arial, sans-serif;
-  src: url("./fonts/Epilogue/static/Epilogue-Bold.ttf") format("truetype");
+  font-family: "Epilogue-bold";
+  src: url("../fonts/Epilogue/static/Epilogue-Bold.ttf") format("truetype"), url("./fonts/Epilogue/Epilogue-Bold.woff2") format("woff2"), url("./fonts/Epilogue/Epilogue-Bold.woff") format("woff");
   font-weight: 700;
-  font-style: bold;
+  font-style: normal;
+  font-display: swap;
 }
 /* Stylesheet for the navbar section */
 /* File that acts as a studyguide will theme colors, fonts and sizes and including bootstrap customes */
@@ -23705,28 +23706,30 @@ textarea.form-control-lg {
   }
 }
 @font-face {
-  font-family: "epilogue-bold", Arial, sans-serif;
+  font-family: "epilogue-regular", sans-serif;
   src: url("./fonts/Epilogue/static/Epilogue-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: bold;
 }
 @font-face {
-  font-family: "epilogue-semi-bold", Arial, sans-serif;
-  src: url("./fonts/Epilogue/static/Epilogue-Bold.ttf") format("truetype");
+  font-family: "Epilogue-bold";
+  src: url("../fonts/Epilogue/static/Epilogue-Bold.ttf") format("truetype"), url("./fonts/Epilogue/Epilogue-Bold.woff2") format("woff2"), url("./fonts/Epilogue/Epilogue-Bold.woff") format("woff");
   font-weight: 700;
-  font-style: bold;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "epilogue-bold", Arial, sans-serif;
+  font-family: "epilogue-regular", sans-serif;
   src: url("./fonts/Epilogue/static/Epilogue-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: bold;
 }
 @font-face {
-  font-family: "epilogue-semi-bold", Arial, sans-serif;
-  src: url("./fonts/Epilogue/static/Epilogue-Bold.ttf") format("truetype");
+  font-family: "Epilogue-bold";
+  src: url("../fonts/Epilogue/static/Epilogue-Bold.ttf") format("truetype"), url("./fonts/Epilogue/Epilogue-Bold.woff2") format("woff2"), url("./fonts/Epilogue/Epilogue-Bold.woff") format("woff");
   font-weight: 700;
-  font-style: bold;
+  font-style: normal;
+  font-display: swap;
 }
 @media (min-width: 992px) {
   .header-section {
@@ -23811,6 +23814,9 @@ textarea.form-control-lg {
     display: none;
   }
 }
+.header-section .overlay .navbar-nav .nav-item .nav-link img {
+  margin-left: 11px;
+}
 .header-section .overlay .navbar-nav .nav-item .dropdown-menu {
   border: none;
 }
@@ -23838,10 +23844,9 @@ textarea.form-control-lg {
   height: 100%;
 }
 .header-section .overlay .navbar-nav .nav-item .nav-link {
-  font-family: "epilogue-bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   color: hsl(0, 0%, 41%);
-  font-size: 14px;
+  font-size: 16px;
 }
 .header-section .overlay .navbar-nav .nav-item .nav-link:hover {
   color: hsl(0, 0%, 8%);
@@ -23875,9 +23880,8 @@ textarea.form-control-lg {
   }
 }
 .header-section .overlay .right-section .login {
-  font-family: "epilogue-bold", Arial, sans-serif;
-  font-weight: bold;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 16px;
   color: hsl(0, 0%, 41%);
   cursor: pointer;
 }
@@ -23892,12 +23896,11 @@ textarea.form-control-lg {
   border: 2px solid hsl(0, 0%, 41%);
   background: transparent;
   color: hsl(0, 0%, 41%);
-  font-family: "epilogue-bold", Arial, sans-serif;
   border-radius: 18px;
   padding: 0.9rem 1.9rem;
-  font-weight: bold;
+  font-weight: 500;
   width: 100%;
-  font-size: 14px;
+  font-size: 16px;
 }
 @media (min-width: 992px) {
   .header-section .overlay .right-section .btn-outline {
@@ -23908,20 +23911,18 @@ textarea.form-control-lg {
   border: 2px solid hsl(0, 0%, 8%);
   background: hsl(0, 0%, 8%);
   color: hsl(0, 0%, 98%);
-  font-family: "epilogue-bold", Arial, sans-serif;
   padding: 0.9rem 1.9rem;
   border-radius: 18px;
-  font-weight: bold;
+  font-weight: 500;
   transition: all 350ms ease-in-out;
 }
 .header-section .overlay .right-section .btn-outline:active {
   border: 2px solid hsl(0, 0%, 8%);
   background: hsl(0, 0%, 8%);
   color: hsl(0, 0%, 98%);
-  font-family: "epilogue-bold", Arial, sans-serif;
   padding: 0.9rem 1.9rem;
   border-radius: 18px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 /* styles for the main section*/
@@ -35772,28 +35773,30 @@ textarea.form-control-lg {
   }
 }
 @font-face {
-  font-family: "epilogue-bold", Arial, sans-serif;
+  font-family: "epilogue-regular", sans-serif;
   src: url("./fonts/Epilogue/static/Epilogue-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: bold;
 }
 @font-face {
-  font-family: "epilogue-semi-bold", Arial, sans-serif;
-  src: url("./fonts/Epilogue/static/Epilogue-Bold.ttf") format("truetype");
+  font-family: "Epilogue-bold";
+  src: url("../fonts/Epilogue/static/Epilogue-Bold.ttf") format("truetype"), url("./fonts/Epilogue/Epilogue-Bold.woff2") format("woff2"), url("./fonts/Epilogue/Epilogue-Bold.woff") format("woff");
   font-weight: 700;
-  font-style: bold;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "epilogue-bold", Arial, sans-serif;
+  font-family: "epilogue-regular", sans-serif;
   src: url("./fonts/Epilogue/static/Epilogue-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: bold;
 }
 @font-face {
-  font-family: "epilogue-semi-bold", Arial, sans-serif;
-  src: url("./fonts/Epilogue/static/Epilogue-Bold.ttf") format("truetype");
+  font-family: "Epilogue-bold";
+  src: url("../fonts/Epilogue/static/Epilogue-Bold.ttf") format("truetype"), url("./fonts/Epilogue/Epilogue-Bold.woff2") format("woff2"), url("./fonts/Epilogue/Epilogue-Bold.woff") format("woff");
   font-weight: 700;
-  font-style: bold;
+  font-style: normal;
+  font-display: swap;
 }
 .hero-section {
   display: flex;
@@ -35806,7 +35809,7 @@ textarea.form-control-lg {
     flex-direction: row;
     gap: 200px;
     max-width: 1164px;
-    margin: 79px auto 121px;
+    margin: 79px auto 120px;
   }
 }
 .hero-section .hero-content {
@@ -35820,22 +35823,22 @@ textarea.form-control-lg {
 }
 .hero-section .hero-content .heading {
   font-size: 2rem;
-  font-family: "epilogue-semi-bold", Arial, sans-serif;
+  font-family: "Epilogue", sans-serif;
   font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 @media (min-width: 992px) {
   .hero-section .hero-content .heading {
     font-size: 4.6rem;
     line-height: 5rem;
     text-align: left;
-    max-width: 93%;
+    max-width: 100%;
   }
 }
 .hero-section .hero-content p {
   padding: 0 20px;
-  line-height: 2rem;
-  margin-bottom: 33px;
-  font-family: "epilogue-bold", Arial, sans-serif;
+  line-height: 25px;
+  margin-bottom: 3.5rem;
   color: hsl(0, 0%, 41%);
 }
 @media (min-width: 992px) {
@@ -35848,30 +35851,27 @@ textarea.form-control-lg {
   border: 2px solid hsl(0, 0%, 8%);
   background: hsl(0, 0%, 8%);
   color: hsl(0, 0%, 98%);
-  font-family: "epilogue-bold", Arial, sans-serif;
   padding: 0.9rem 1.9rem;
   border-radius: 18px;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 48px;
 }
 .hero-section .hero-content button:hover {
   border: 2px solid hsl(0, 0%, 41%);
   background: transparent;
   color: hsl(0, 0%, 41%);
-  font-family: "epilogue-bold", Arial, sans-serif;
   border-radius: 18px;
   padding: 0.9rem 1.9rem;
-  font-weight: bold;
+  font-weight: 500;
   transition: all 350ms ease-in-out;
 }
 .hero-section .hero-content button:active {
   border: 2px solid hsl(0, 0%, 41%);
   background: transparent;
   color: hsl(0, 0%, 41%);
-  font-family: "epilogue-bold", Arial, sans-serif;
   border-radius: 18px;
   padding: 0.9rem 1.9rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 .hero-section .hero-content .logo-section {
   display: flex;
@@ -35901,16 +35901,17 @@ textarea.form-control-lg {
 }
 
 @font-face {
-  font-family: "epilogue-bold", Arial, sans-serif;
+  font-family: "epilogue-regular", sans-serif;
   src: url("./fonts/Epilogue/static/Epilogue-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: bold;
 }
 @font-face {
-  font-family: "epilogue-semi-bold", Arial, sans-serif;
-  src: url("./fonts/Epilogue/static/Epilogue-Bold.ttf") format("truetype");
+  font-family: "Epilogue-bold";
+  src: url("../fonts/Epilogue/static/Epilogue-Bold.ttf") format("truetype"), url("./fonts/Epilogue/Epilogue-Bold.woff2") format("woff2"), url("./fonts/Epilogue/Epilogue-Bold.woff") format("woff");
   font-weight: 700;
-  font-style: bold;
+  font-style: normal;
+  font-display: swap;
 }
 body {
   background: hsl(0, 0%, 98%);
