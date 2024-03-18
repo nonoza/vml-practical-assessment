@@ -35886,8 +35886,8 @@ textarea.form-control-lg {
     justify-content: space-between;
   }
 }
-.hero-section .hero-content .logo-section img {
-  width: 19%;
+.hero-section .hero-content .logo-section a img {
+  width: 100%;
 }
 .hero-section .hero-image picture .mobile-img {
   max-width: 100%;
