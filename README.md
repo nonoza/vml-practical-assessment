@@ -2,7 +2,7 @@
 
 This project is one of the front end mentor project which includes dropdown nav bar.
 
-- Live Site URL: [Demo](https://nonoza.github.io/vml-assessment/)
+- Live Site URL: [Demo](https://nonoza.github.io/vml-practical-assessment/)
 
 
 ### Screenshot
