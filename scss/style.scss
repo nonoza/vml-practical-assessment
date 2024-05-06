@@ -4,6 +4,7 @@
 //importing sections
 @import "../scss/sections/navbar";
 @import "../scss/sections/main.scss";
+@import "../scss/sections/popup.scss";
 
 //impoting typographu
 @import "./typography";
@@ -16,7 +17,7 @@ body {
   }
 
   @include media-breakpoint-up(lg) { // Larger screens
-    max-width: 1400px;
+    // max-width: 1400px;
     margin: 0 auto;
   }
 }

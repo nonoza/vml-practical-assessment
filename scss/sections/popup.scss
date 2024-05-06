@@ -1,0 +1,103 @@
+.popup-wrapper {
+    background:rgb(0,0,0,0.5);
+    width:100%;
+    height:100%;
+    position:fixed;
+    top: -21px;
+    display:none;   
+    min-height: 100vh;
+  
+    
+    .popup {
+        text-align: center;
+        background: $almost-white;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+        max-width:400px;
+        margin:auto;
+        padding: 15px 10px;
+        position:relative;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        border-radius: 15px;
+
+        h2 {
+            font-size: 20px;
+            color: $almost-black;
+            margin: 20px 0 20px;
+          }
+
+          .error-mgs {
+            color: $error-mg;
+          }
+          input[type="email"], input[type="password"] ,input[type="text"]{
+            width: 92%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 30px;
+            border: 2px solid $medium-gray;
+            font-family: $brand-font;
+            outline: none;
+        }
+
+        button {
+            @include btn-background;
+            margin-bottom: 48px;
+      
+            &:hover {
+              @include btn-outline;
+              transition: all 350ms ease-in-out;
+            }
+      
+            &:active {
+              @include btn-outline;
+            }
+        }
+        form {
+            position: relative;
+            top: 45px;
+
+            .snap-btn {
+                p {
+                    color: $medium-gray;
+                    position: relative;
+                    bottom: 31px;
+                }
+             
+              
+            }
+        }
+        a.login-link,a.register-link{
+            color: $almost-black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        a.login-link:hover,a.register-link:hover {
+            color:  $medium-gray
+        }
+        .popup-close {
+            position:absolute;
+            top:8px;
+            right:20px;
+            font-size:30px;
+            cursor:pointer;
+            color: $almost-black;
+          }
+          .popup-register {
+            display: block;
+          }
+          .popup-login {
+            display: none;
+          }
+          .popup-logo {
+            width: 30%;
+            margin: auto;
+          }
+      }
+     
+    
+  }

@@ -181,7 +181,41 @@
           </picture>
         </div>
       </section>
+      
     </main>
+    <!--popup-->
+    <div class=" popup-wrapper">
+      <div class="popup popup-register">
+        <div class ="popup-close">x</div>
+       <form>
+        <img src="images/logo.svg" alt="logo" class="popup-logo"/>
+         <h2>New Here? Register with us</h2>
+         <input type="text" placeholder="Enter Your Name" id="firstNname"/>
+         <input type="email" placeholder="Email Adress" id="email-address"/>
+         <input type="password" placeholder="Enter your password" id="password"/>
+         <p class="error-mgs"></p>
+         <div class="snap-btn" id="submit-btn" >
+           <button type="submit">Submit</button>
+           <p>Have an account?   <a href="#" class="login-link">Login</a></p>
+         </div>
+       </form>
+      </div>
+      <!--login-->
+      <div class="popup popup-login">
+        <div class ="popup-close">x</div>
+       <form>
+        <img src="images/logo.svg" alt="logo" class="popup-logo"/>
+         <h2>Welcome Back! Please Log In</h2>
+         <input type="email" placeholder="Email Adress" id="email-address"/>
+         <input type="password" placeholder="Enter your password" id="password"/>
+         <p class="error-mgs"></p>
+         <div class="snap-btn" id="submit-btn" >
+           <button type="submit" >Submit</button>
+           <p>Don't have an account?   <a href="#" class="register-link">Register</a></p>
+         </div>
+       </form>
+      </div>
+       </div>
     <!-- Importing the js libaries as well as my js file-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/bootstrap.bundle.js"></script>
